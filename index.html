@@ -2,9 +2,90 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="extra/img/terminal.png"/>
         <title>Dimitris Schizas</title>
+        <link rel="shortcut icon" type="image/png" href="extra/img/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="extra/css/base.css">
+        <link rel="stylesheet" type="text/css" href="extra/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-      none
+        <div class="hero" id="top">
+            <div class="circle"></div>
+            <h1>Dimitris Schizas</h1>
+            <h6>National Technical University of Athens. Applied Mathematics and Computer Science.</h6>
+            <br>
+            <div class="links">
+                <ul>
+                    <li><div class="hvr-grow"><a href="http://github.com/dschz"><i class="fa fa-github"></i></a></div></li>
+                    <li><div class="hvr-grow"><a href="http://twitter.com/dschz"><i class="fa fa-twitter-square"></i></a></div></li>
+                    <li><div class="hvr-grow"><a href="https://www.linkedin.com/in/dimitris-schizas-2038468b"><i class="fa fa-linkedin-square"></i></a></div></li>
+                    <li><div class="hvr-grow"><a href="https://www.facebook.com/sc.dimitris"><i class="fa fa-facebook-square"></i></a></div></li>
+                    <li><div class="hvr-grow"><a href="extra/other/dschizas.pdf"><i class="fa fa-file-pdf-o"></i></a></div></li>
+                    <li><div class="hvr-grow"><a href="mailto:sc.dimitris@gmail.com"><i class="fa fa-envelope"></i></a></div></li>
+                </ul>
+            </div>
+            <div class="arrow hvr-hang">
+                <a href="#about-me"><i class="fa fa-arrow-down"></i></a>
+            </div>
+        </div>
+        <div class="navbar-wrapper">
+            <nav>
+                <div class="content">
+                    <ul>
+                        <li class="action-item"><a href="#top"><p>Dimitris Schizas</p></a></li>
+                        <li><a href="#about-me"><p>About Me</p></a></li>
+                        <li><a href="#map"><p>Where I've Been</p></a></li>
+                        <li><a href="#projects"><p>Projects</p></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <section id="about-me">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hello! My name is Dimitris Schizas and I'm a graduate of National Technical University of Athens with major on applied mathematics and computer science. On the third year of my studies, I joined the Biomedical Engineering Unit of National University of Athens as a <a href="http://www.biotech.med.uoa.gr/en/members-staff/research-associates.html">research associate</a> and after a year I joined the LHTC lab of EPFL. During those years I developed different softwares, most of them written in Java and coauthored several publications.</p>
+                <p>In 2012 I cofounded <a href="http://captainwise.com">Captainwise</a>, a travel website that helps users search and book their ideal vacations. After almost a year of development we raised $100,000 funding and managed to grow our team and expand in different countries. We partnered with big companies like booking.com and skyscanner and worked with them to develop our core services.</p>
+                <p>Right now, I am working in Athens as a full stack developer, supporting our team.</p>
+            </div>
+        </section>
+        <section id="map">
+            <div class="content">
+                <h2>Where I've Been</h2>
+                <p>Here's everywhere I've been since January 2013. Right now, I'm in <b>Athens, Greece</b>. Let me know if you want to get coffee sometime, I'm always interested in meeting new people!</p><br>
+                <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/dschz.132hi2h3/attribution,zoompan,geocoder.html?access_token=pk.eyJ1IjoiZHNjaHoiLCJhIjoiY2lybmswODE1MDA2a2hwbTFvOGc3aTJmaSJ9.rYlXNOofV7mu-P341VyTyA'></iframe>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="content">
+                <h2>Projects</h2><br>
+                <h4><a href="http://captainwise.com">Captainwise<i class="fa fa-link" aria-hidden="true"></i></a></h4>
+                <p>Captainwise is a travel search engine, where the user types his budget and the airport he want to depart from and Captainwise suggest hundreads of destinations to choose from. My main responsibility at Captainwise was to develop our core product. I implemented our innovative algorithms for predicting ticket prices into our product. I consumed SOAP and REST web services and built our own REST web service on Spring Java. I designed and created a mirror of the cached hotels' attributes of booking.com (more than 400K hotels and 7M photos) in our own database schema and CDN.</p>
+                <p>By being a cofounder of a startup company, I contributed in core business tasks like helping on Captainwise business plan, product development, raising funding and talking to our customers through customer support.</p>
+                <br>
+
+                <h4><a href="http://speakthrough.com">Speakthrough<i class="fa fa-link" aria-hidden="true"></i></a></h4>
+                <p>Speakthrough is a real time communication tool that let's companies communicate with their customers through the web. We developed a web analytics platform (<a href="http://speakthrough.com">speakthrough.com</a>), that uses a WebRTC (Real-Time Communications) API to have a browser-based communication service.</p>
+                <br>
+
+                <h4>Zeb Application</h4>
+                <p><a href="http://zeb.gr/en/">Zeb</a> is a company located in Athens, Greece and provides building energy improvements, inspection and maintenance services. For Zeb, I developed a Java software that stores thousands of buildings' information records, like temperature, active/reactive power and other plc metrics. At the same time, this software can analyze this information with build-in mathematical functions and plots in order to export reports for their clients.</p>
+                <br>
+
+                <h4>Music Radar Bot<a href="https://github.com/dschz/music-messenger-bot"><i class="fa fa-github" aria-hidden="true"></i></a></h4>
+                <p>By the time that Facebook announced Messenger product for developers (Messenger bots), I wanted to create a bot for Messenger that uses a feature of the app. I came up with the idea to make a sound recognition bot, called Music Radar Bot. I developed the bot with Node.js and Express and I used the ACRCloud "Music & Video Recognition" web service to find out what is the name of the song. The bot responds with a thumbnail of the album, a spotify link, a youtube link and give the option for the user to google search the title of the song.</p>
+                <br>
+
+                <h4>VH-IVUS Image Analysis<a href="http://www.minervamedica.it/it/riviste/minerva-cardioangiologica/articolo.php?cod=R05Y9999N00A150029"><i class="fa fa-file-text-o" aria-hidden="true"></i></a><a href="http://www.tandfonline.com/doi/abs/10.1080/10255842.2012.713940?journalCode=gcmb20"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></h4>
+                <p>I have worked in the <a href="http://www.biotech.med.uoa.gr/en/">Biomedical Unit</a> of National University of Athens in order to build an image analysis software, that could extract valuable information from patient images with atherosclerosis. The software was developed in Java and it could perform a parallel analysis of hundreads of <a href="http://www.volcanocorp.com/products/ivus-imaging/vh-ivus.php">volcano VH IVUS</a> photos. By analyzing the findings of this software, we managed to publish our research and until today the software is being used by the lab faculty (PhD students and Hippokration hospital doctors) to perform analysis on the patients images and categorize them into different groups.</p>
+                <br>
+
+                <h4>University Thesis<a href="http://dspace.lib.ntua.gr/handle/123456789/40238?locale-attribute=en"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+                <p>During the senior year of the studies in National Technical University of Athens, every student has a 6 month period to develop his thesis.</p>
+                <p>I developed a web content mining software that could perform a systematic sentiment analysis with a focus on the identification of the polarity of the contents. For the data recovery and polarity categorization I used machine learning, natural language processing and data mining algorithms.</p>
+                <br>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </body>
 </html>
