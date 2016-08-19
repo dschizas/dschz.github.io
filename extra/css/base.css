@@ -42,7 +42,8 @@ ul li {
 p {
 	margin: 1rem 0;
 	line-height: 1.8;
-	font-size: 1.1em; }
+	font-size: 1.1em;
+	font-weight: 300; }
 
 .content {
 	max-width: 60rem;
