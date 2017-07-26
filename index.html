@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="extra/css/base.css">
         <link rel="stylesheet" type="text/css" href="extra/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css" rel="stylesheet"/>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js"></script>
     </head>
     <body>
         <div class="hero" id="top">
@@ -35,7 +37,7 @@
                     <ul>
                         <li class="action-item"><a href="#top"><p>Dimitris Schizas</p></a></li>
                         <li><a href="#about-me"><p>About Me</p></a></li>
-                        <li><a href="#map"><p>Where I've Been</p></a></li>
+                        <li><a href="#map-container"><p>Where I've Been</p></a></li>
                         <li><a href="#projects"><p>Projects</p></a></li>
                     </ul>
                 </div>
@@ -48,11 +50,11 @@
                 <p>In 2012 I cofounded <a href="http://captainwise.com">Captainwise</a>, a travel website that helps users search and book their ideal vacations. After almost a year of development we raised $100,000 funding and managed to grow our team and expand in different countries. We partnered with big companies like booking.com and skyscanner and worked with them to develop our core services.</p>
             </div>
         </section>
-        <section id="map">
+        <section id="map-container">
             <div class="content">
                 <h2>Where I've Been</h2>
                 <p>Here's everywhere I've been since January 2013. Right now, I'm in <b>London, UK</b>. Let me know if you want to get coffee sometime, I'm always interested in meeting new people!</p><br>
-                <iframe width='100%' height='500px' frameBorder='0' src='https://api.mapbox.com/styles/v1/dschz/cj5cjg87i06au2rmp6k7g04w2.html?fresh=true&title=true&access_token=pk.eyJ1IjoiZHNjaHoiLCJhIjoiY2lybmswODE1MDA2a2hwbTFvOGc3aTJmaSJ9.rYlXNOofV7mu-P341VyTyA#3.5/47.53/11.81'></iframe>
+                <div id="map"></div>
             </div>
         </section>
         <section id="projects">
@@ -94,6 +96,14 @@
 
             ga('create', 'UA-103290227-1', 'auto');
             ga('send', 'pageview');
+
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZHNjaHoiLCJhIjoiY2lybmswODE1MDA2a2hwbTFvOGc3aTJmaSJ9.rYlXNOofV7mu-P341VyTyA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/dschz/cj5cjg87i06au2rmp6k7g04w2',
+                center: [11.814,47.526],
+                zoom: 3.5,
+            });
         </script>
     </body>
 </html>
